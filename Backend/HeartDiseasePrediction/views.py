@@ -45,10 +45,10 @@ def Heart_Disease_Prediction(request):
             prob_no_disease = None
         print("Prediction:",prediciton)
         return Response({
-            "Prediction":prediciton[0],
+            "Prediction":int(prediciton[0]),
             "probability_disease": pred_proba,
             "probability_no_disease": prob_no_disease,
             "Message":"Prediction Successful!"
         })
     except Exception as e:
-        return Response({"error":str(e)})
+        return Response({"error":str(e)},status=500)
