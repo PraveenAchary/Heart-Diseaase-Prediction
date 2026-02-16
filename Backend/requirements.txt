@@ -8,6 +8,7 @@ joblib==1.5.2
 matplotlib==3.10.6
 nltk==3.9.2
 keras==3.9.2
+gunicorn
 
 
 
