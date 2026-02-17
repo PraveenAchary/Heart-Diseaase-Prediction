@@ -53,6 +53,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
+     "https://heart-disease-prediction-iota-ten.vercel.app",
     "http://localhost:5173",  # Your React dev server
     "http://localhost:3000",  # Optional if you also run React on 3000
 
